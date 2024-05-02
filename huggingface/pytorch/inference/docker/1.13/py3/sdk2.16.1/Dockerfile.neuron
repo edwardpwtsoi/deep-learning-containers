@@ -127,7 +127,7 @@ RUN pip install --no-cache-dir -U \
 # Install Neuron-cc and PyTorch
 RUN pip install --extra-index-url https://pip.repos.neuron.amazonaws.com \
     torch-neuron==${NEURON_FRAMEWORK_VERSION} \
-    neuronx-cc[tensorflow]==${NEURON_CC_VERSION} \
+    neuron-cc[tensorflow]==${NEURON_CC_VERSION} \
  && pip install "protobuf<4" \
  && pip install --no-deps --no-cache-dir -U torchvision==0.14.*
 
